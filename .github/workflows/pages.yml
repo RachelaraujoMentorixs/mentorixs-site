@@ -29,6 +29,7 @@ jobs:
           rm -f _site/netlify.toml
           echo "www.mentorixs.com.br" > _site/CNAME
           touch _site/.nojekyll
+          echo ".wa-float{width:60px!important;padding:0!important}.wa-float-text{display:none!important}.wa-float .wa-icon{width:32px;height:32px}" >> _site/assets/css/site.css
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
